@@ -40,3 +40,9 @@ testButton.addEventListener("click", () => {
     testResult.textContent = "no match";
   }
 });
+
+resetButton.addEventListener("click", () => {
+  regexPattern.value = "";
+  stringToTest.textContent = "";
+  testResult.textContent = "";
+});
