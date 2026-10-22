@@ -1,7 +1,5 @@
 # Regex Sandbox
 
-# Regex Sandbox
-
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge)](https://yamkelamazwi.github.io/regex-sandbox/)
 [![Source Code](https://img.shields.io/badge/GitHub-Source%20Code-black?style=for-the-badge&logo=github)](https://github.com/yamkelamazwi/regex-sandbox)
 
