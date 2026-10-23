@@ -34,6 +34,14 @@ h1 {
   text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
 }
 
+#author {
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
 #regex-container,
 #test-container,
 #result-container {
@@ -166,4 +174,14 @@ h2 {
   padding: 2px 4px;
   border-radius: 4px;
   font-weight: bold;
+}
+
+.success {
+  border: 2px solid #22c55e;
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.5);
+}
+
+.error {
+  border: 2px solid #ef4444;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
 }
