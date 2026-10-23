@@ -1,8 +1,9 @@
 const regexPattern = document.getElementById("pattern");
 const stringToTest = document.getElementById("test-string");
 const testButton = document.getElementById("test-btn");
-const testResult = document.getElementById("result");
 const resetButton = document.getElementById("reset-btn");
+const matchCount = document.getElementById("match-count");
+const testResult = document.getElementById("result");
 
 const caseInsensitiveFlag = document.getElementById("i");
 const globalFlag = document.getElementById("g");
@@ -37,8 +38,16 @@ testButton.addEventListener("click", () => {
     );
 
     testResult.textContent = matches.join(", ");
+    matchCount.textContent = `Matches Found: ${matches.length}`;
+
+    testResult.classList.remove("error");
+    testResult.classList.add("success");
   } else {
     testResult.textContent = "no match";
+    matchCount.textContent = "Matches Found: 0";
+
+    testResult.classList.remove("success");
+    testResult.classList.add("error");
   }
 });
 
@@ -46,4 +55,8 @@ resetButton.addEventListener("click", () => {
   regexPattern.value = "";
   stringToTest.textContent = "";
   testResult.textContent = "";
+  matchCount.textContent = "Matches Found: 0";
+
+  testResult.classList.remove("success");
+  testResult.classList.remove("error");
 });
