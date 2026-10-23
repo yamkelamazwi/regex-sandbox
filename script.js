@@ -2,6 +2,7 @@ const regexPattern = document.getElementById("pattern");
 const stringToTest = document.getElementById("test-string");
 const testButton = document.getElementById("test-btn");
 const testResult = document.getElementById("result");
+const resetButton = document.getElementById("reset-btn");
 
 const caseInsensitiveFlag = document.getElementById("i");
 const globalFlag = document.getElementById("g");
